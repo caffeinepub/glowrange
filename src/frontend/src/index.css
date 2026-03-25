@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Glowrange palette — warm ivory/orange brand */
+    /* #FBF5EF warm off-white ivory */
+    --background: 0.968 0.012 75;
+    /* #1F1A17 near-black warm charcoal */
+    --foreground: 0.155 0.012 50;
+    /* #FFFFFF white cards */
+    --card: 1 0 0;
+    --card-foreground: 0.155 0.012 50;
+    --popover: 1 0 0;
+    --popover-foreground: 0.155 0.012 50;
+    /* #2B2623 dark charcoal — primary CTA */
+    --primary: 0.19 0.01 50;
+    --primary-foreground: 0.985 0 0;
+    /* #FDF0E6 light peach header */
+    --secondary: 0.96 0.025 65;
+    --secondary-foreground: 0.155 0.012 50;
+    /* muted — very light warm tone */
+    --muted: 0.955 0.02 65;
+    /* #6E625B muted taupe */
+    --muted-foreground: 0.46 0.018 55;
+    /* Orange accent */
+    --accent: 0.7 0.18 50;
+    --accent-foreground: 0.985 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* #EDD9CC light warm border */
+    --border: 0.9 0.022 60;
+    --input: 0.9 0.022 60;
+    --ring: 0.7 0.18 50;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.96 0.025 65;
+    --sidebar-foreground: 0.155 0.012 50;
+    --sidebar-primary: 0.19 0.01 50;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.7 0.18 50;
+    --sidebar-accent-foreground: 0.985 0 0;
+    --sidebar-border: 0.9 0.022 60;
+    --sidebar-ring: 0.7 0.18 50;
+
+    /* Brand custom tokens — orange palette */
+    --glow-blush: 0.7 0.18 50;
+    --glow-blush-light: 0.78 0.14 52;
+    --glow-charcoal: 0.19 0.01 50;
+    --glow-taupe: 0.46 0.018 55;
+    --glow-ivory: 0.968 0.012 75;
+    --glow-beige: 0.96 0.025 65;
+    --glow-border: 0.9 0.022 60;
+    /* Deep orange for CTAs and highlights */
+    --glow-orange: 0.7 0.18 50;
+    --glow-orange-light: 0.82 0.14 55;
+    --glow-orange-deep: 0.58 0.2 46;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 800;
+  }
+  p,
+  span,
+  a,
+  li,
+  td,
+  th,
+  label,
+  input,
+  textarea,
+  button {
+    font-weight: 700;
+  }
+}
